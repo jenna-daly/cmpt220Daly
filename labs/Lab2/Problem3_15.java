@@ -46,20 +46,44 @@ public class Problem3_15 {
     int guessDigit3 = guessTest%10;
 
     System.out.println("The lottery number is: " + lottery);
+    
+    String result = "0";
+    //String resultString;
 
     //Check guess
-    switch (guess) {
-    	case 1: if(guess == lottery){
-    		System.out.println("Exact match! You win $10,000");
+    if(guess == lottery){
+    		result = "1";
     	}
-    	case 2: if(guessDigit2 == lotteryDigit1 && guessDigit1 == lotteryDigit2
-            && guessDigit3 == lotteryDigit3){
-            System.out.println("Match all digits: You win $3,000");
+    else if(guessDigit1 == lotteryDigit3 && guessDigit2 == lotteryDigit2 
+        && guessDigit3 == lotteryDigit1 || guessDigit1 == lotteryDigit2 
+        && guessDigit2 == lotteryDigit1 && guessDigit3 == lotteryDigit3 
+        || guessDigit1 == lotteryDigit3 && guessDigit2 == lotteryDigit1 
+        && guessDigit3 == lotteryDigit2 || guessDigit1 == lotteryDigit2 
+        && guessDigit2 == lotteryDigit3 && guessDigit3 == lotteryDigit1){
+            result = "2";
         }
-        case 3: if(guess != lottery){
-            System.out.println("Sorry, no match!");
-        }
+    else if(guessDigit1 == lotteryDigit1 || guessDigit1 == lotteryDigit2 
+        || guessDigit1 == lotteryDigit3 || guessDigit2 == lotteryDigit1 
+        || guessDigit2 == lotteryDigit2 || guessDigit3 == lotteryDigit3
+        || guessDigit3 == lotteryDigit1 || guessDigit3 == lotteryDigit2
+        || guessDigit3 == lotteryDigit3){
+            result = "3";
     }
+    else{
+            result = "4";
+        }
+
+    switch(result){
+        case "1": result = "Exact match! You win $10,000";
+                break;
+        case "2": result = "Match all digits: You win $3,000";
+                break;
+        case "3": result = "Match one digit: You win $1,000!";
+                break;
+        case "4": result = "Sorry, no match!";
+                break;
+      }
+    System.out.println(result);
   }
 }
 
