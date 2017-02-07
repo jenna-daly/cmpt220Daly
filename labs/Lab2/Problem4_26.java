@@ -13,8 +13,8 @@
 /**
  * Problem4_26
  * 
- * This class implements a program that returns an amount
- * given its smaller incremental components. 
+ * This class implements a program that returns an amount,
+ * giving the user smaller incremental components. 
  */
 
 import java.util.Scanner;

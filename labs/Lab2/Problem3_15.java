@@ -14,7 +14,7 @@
  * Problem3_4
  * 
  * This class implements a program that generates a random lottery
- * number and tells the user if their guess has won any amount of money. 
+ * number and tells the user if their guess has won any prize. 
  */
 
 import java.util.Scanner;
