@@ -1,0 +1,15 @@
+10 pts
+
+Jenna,
+
+- Congratulations on passing the judge Kattis!
+
+
+However, 
+
+- Comments about the class are two spaces indented, which is incorrect. Next
+  time points will be subtracted for this.
+
+Peace,
+
+- Dr. Rivas
