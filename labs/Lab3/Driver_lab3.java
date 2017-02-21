@@ -13,8 +13,7 @@
 /**
  * Driver_lab3
  * 
- * This class implements the prompting of the user to enter an integer which is
- * then reversed and determined if it is a palindrome or not.
+ * This class implements the p-norm equation.
  */
 
 import java.util.Scanner;
@@ -22,9 +21,11 @@ import java.util.Scanner;
 public class Driver_lab3 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    
-    float x1, x2, y1, y2, p, answer;
-    answer = Math.pow(Math.pow(Math.abs(x1-x2), p) + Math.pow(Math.abs(y1-y2), p), 1/p);
-    System.out.println(answer);
+    float  x1, x2, y1, y2, p, answer; 
+
+   // while(input >> x1 >> x2 >> y1 >> y2 >> p){
+      answer = (float)Math.pow(Math.pow(Math.abs(x1-x2), p) + Math.pow(Math.abs(y1-y2), p), 1/p);
+      System.out.println(answer);
+    //}
   }
 }
