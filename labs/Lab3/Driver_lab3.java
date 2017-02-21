@@ -16,16 +16,15 @@
  * This class implements the p-norm equation.
  */
 
-import java.util.Scanner;
+import java.util.Scanner.nextFloat();
 
 public class Driver_lab3 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    float  x1, x2, y1, y2, p, answer; 
+    float x1, x2, y1, y2, p, answer; 
 
-   // while(input >> x1 >> x2 >> y1 >> y2 >> p){
       answer = (float)Math.pow(Math.pow(Math.abs(x1-x2), p) + Math.pow(Math.abs(y1-y2), p), 1/p);
       System.out.println(answer);
-    //}
+    
   }
 }
