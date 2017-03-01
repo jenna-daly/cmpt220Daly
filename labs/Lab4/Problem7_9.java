@@ -27,7 +27,7 @@ public class Problem7_9 {
     double [] ten = new double[10];
     //creates for loop to store user input in array
     for(int i = 0; i < 10; i++) {
-    	ten[i] = input.nextDouble();
+      ten[i] = input.nextDouble();
     }
     //prints min
     System.out.println("The minimum number is: " + min(ten));
