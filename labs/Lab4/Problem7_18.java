@@ -32,7 +32,7 @@ public class Problem7_18 {
       for (double e: user) {
         System.out.print(e + " ");
 	    }
-    //System.out.print(bubbleSorting(user));
+    //System.out.print(bubbleSorting(user)); didn't work so changed to for loop
     }
 
 public static void bubbleSorting(double[] bubble) {
