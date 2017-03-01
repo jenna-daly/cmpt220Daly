@@ -19,33 +19,36 @@
 import java.util.Scanner;
 
 public class Problem7_18 {
-    public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
-      System.out.print("Enter ten numbers: ");
-      int [] bubble = new int[10];
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter ten numbers: ");
+    double [] user = new double[10];
       //creates for loop to store user input in array
-      for(int i = 0; i < bubble.length; i++) {
-        bubble[i] = input.nextInt();
-      }
-      bubbleSorting(bubble);
-    System.out.println("");
+    for(int i = 0; i < user.length; i++) {
+      user[i] = input.nextInt();
+    }
+
+    bubbleSorting(user);
+      for (double e: user) {
+	    System.out.print(e + " ");
+	  }
+    //System.out.print(bubbleSorting(user));
   }
 
-public static void bubbleSorting(int[] bubble) {
-  int temp = 0;
-  boolean test=true;
-    do{
-      test=false;
-      for(int i=0; i<bubble.length; i++){
-      if(bubble[i]>bubble[i+1]){
-      temp = bubble[i];
-      bubble[i]=bubble[i+1];
-      bubble[i+1]=temp;
-      test=true;
-      }	
+public static void bubbleSorting(double[] bubble) {
+  double temporary;
+  boolean test = true;
+
+  while(test){
+    test=false;
+    for (int i=0; i<bubble.length-1; i++) {
+      if(bubble[i]>bubble[i+1]) {
+        temporary = bubble[i];
+        bubble[i]=bubble[i+1];
+        bubble[i+1]=temporary;
+        test=true;
+        }
+      }
     }
-   }
   }
 }
-
-
