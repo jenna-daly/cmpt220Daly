@@ -23,7 +23,7 @@ public class Problem7_18 {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter ten numbers: ");
     double [] user = new double[10];
-      //creates for loop to store user input in array
+    //creates for loop to store user input in array
     for(int i = 0; i < user.length; i++) {
       user[i] = input.nextDouble();
     }
