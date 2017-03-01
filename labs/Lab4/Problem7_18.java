@@ -30,10 +30,10 @@ public class Problem7_18 {
 
     bubbleSorting(user);
       for (double e: user) {
-	    System.out.print(e + " ");
-	  }
+        System.out.print(e + " ");
+	    }
     //System.out.print(bubbleSorting(user));
-  }
+    }
 
 public static void bubbleSorting(double[] bubble) {
   double temporary;
