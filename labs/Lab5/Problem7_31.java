@@ -38,10 +38,10 @@ public class Problem7_31 {
 
       int[] mergedList = merge(list1, list2);
       System.out.print("The merged list is");
-        for (double e: mergedList) {
-          System.out.print(" " + e);
-        }
+      for (double e: mergedList) {
+        System.out.print(" " + e);
       }
+    }
 
     public static int[] merge(int[] list1, int[] list2) {
       int[] mergedList = new int[list1.length + list2.length];
