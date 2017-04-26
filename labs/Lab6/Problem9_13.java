@@ -63,3 +63,14 @@ class Location {
     }
   }
 }
+
+/* UML Diagram
+
+Location
+---------
+row: int
+column: int
+maxValue: double
+----------
+Location(double[][] a)
+*/
