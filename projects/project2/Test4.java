@@ -62,8 +62,6 @@ public class Test4 extends Application {
       HBox paneForCheckBoxes = new HBox(20);
       paneForCheckBoxes.setPadding(new Insets(5, 5, 5, 5));
       paneForCheckBoxes.setStyle("-fx-border-color: green");
-	    //CheckBox chkBold = new CheckBox("Bold"); <-- declared before this method
-      //CheckBox chkItalix = new CheckBox("Italicize"); <-- declared before, not needed here
       paneForCheckBoxes.setAlignment(Pos.CENTER);
       paneForCheckBoxes.getChildren().addAll(chkBold, chkItalic);
       
@@ -97,8 +95,6 @@ public class Test4 extends Application {
       RadioButton rbBlack = new RadioButton("Black");
       RadioButton rbPurple = new RadioButton("Purple");
       paneForRadioButtons.getChildren().addAll(rbRed, rbBlue, rbGreen, rbBlack, rbPurple);
-     //pane.setLeft(paneForRadioButtons);
-     //paneForRadioButtons.setAlignment(Pos.BOTTOM_LEFT);
 
      //groups the radio buttons
      ToggleGroup group = new ToggleGroup();
